@@ -10,12 +10,17 @@ import urllib.request
 from PIL import ImageTk, Image
 from tkinter import messagebox
 # Made by voxj. and Happy Enderman
+# Don't edit without permissions. If you want to edit something, create a pull request on hhttps://github.com/voxj/HackInjector/pulls.
 # https://youtube.com/@HappyEnderman https://youtube.com/@v0xj_
 # https://chex.voxj.ml/
 # Copyright ©️ Chex 2023
 __name__ = "HackInjector"
-__version__ = "1.0.0"
+__version__ = "1.2.0"
 __state__ = "Public Release"
+Fore = colorama.Fore
+init = colorama.init
+Style = colorama.Style
+colorama.init()
 def download_asset(url, file_name):
     try:
         urllib.request.urlretrieve(url, file_name)
@@ -23,9 +28,9 @@ def download_asset(url, file_name):
     except Exception as e:
         print(e)
         pass
-def show_image(image_path):
+def show_image(image_path, user):
     root = tk.Tk()
-    root.title("Screenshot")
+    root.title(f"{user}'s Screen")
     
     # Load the image
     image = Image.open(image_path)
@@ -50,7 +55,7 @@ def getIP(user):
         print(f"IP: {ip}")
         return ip
     else:
-        print(f"{Fore.LIGHTRED_EX}Error: No Permissions{Fore.RESET}")
+        print(f"{Fore.LIGHTRED_EX}Error: No Access{Fore.RESET}")
         return
 def playSound():
     a = input("What sound do you want to play? ")
@@ -147,6 +152,21 @@ def seeScreen():
         print("Getting data...")
         sleep(1)
         download_asset('https://i.ibb.co/RpmGCSr/rlysus.png', 'sus.png')
+def isItSafe():
+    random_color = random.choice([colorama.Fore.RED, colorama.Fore.GREEN, colorama.Fore.YELLOW, colorama.Fore.BLUE, colorama.Fore.MAGENTA, colorama.Fore.CYAN])
+    print(f"{random_color}", end="")
+    for letter in HackInjector:
+        random_color = random.choice([colorama.Fore.RED, colorama.Fore.GREEN, colorama.Fore.YELLOW, colorama.Fore.BLUE, colorama.Fore.MAGENTA, colorama.Fore.CYAN])
+        print(f"{random_color}{letter}", end="")
+    print(colorama.Fore.RESET + " - Is it safe?")
+    sleep(5)
+    random_color = random.choice([colorama.Fore.RED, colorama.Fore.GREEN, colorama.Fore.YELLOW, colorama.Fore.BLUE, colorama.Fore.MAGENTA, colorama.Fore.CYAN])
+    print(f"{random_color}", end="")
+    for letter in HackInjector:
+        random_color = random.choice([colorama.Fore.RED, colorama.Fore.GREEN, colorama.Fore.YELLOW, colorama.Fore.BLUE, colorama.Fore.MAGENTA, colorama.Fore.CYAN])
+        print(f"{random_color}{letter}", end="")
+    print(f"{Fore.RESET} doesn't hack anything. It is a joke program you can use for some fun and etc., and it doesn't do anything to you device. So, it is completely safe!")
+    sleep(10)
 def editPage(link, before, after):
     print(f'Editing the page on {link}...')
     sleep(5)
@@ -157,11 +177,23 @@ def giveError():
     title = input("What should be the title?: ")
     msg = input('What should be the message?: ')
     messagebox.showwarning(title, msg)
-Fore = colorama.Fore
 def sendPrompt():
     msg = input('What should be the message?: ')
     r=pyautogui.prompt(msg)
     print(r)
+def disconnect(user, name):
+    a = getIP(user)
+    if a != None:
+        sleep(2)
+        print(f'Disconnecting accessory "{name}"...')
+        sleep(1)
+        print(f"Disconnected accessory {name} on {user}'s PC.")
+        sleep(2)
+    else:
+        print('No Access. Please try again!')
+        sleep(3)
+        return
+        
 hackascii = """  _    _            _    _____       _           _             
  | |  | |          | |  |_   _|     (_)         | |            
  | |__| | __ _  ___| | __ | |  _ __  _  ___  ___| |_ ___  _ __ 
@@ -174,13 +206,12 @@ hackascii = """  _    _            _    _____       _           _
 hackinjector = "HackInjector"
 HackInjector = hackinjector
 
-colorama.init()
-
 for char in hackascii:
     random_color = random.choice([colorama.Fore.RED, colorama.Fore.GREEN, colorama.Fore.YELLOW, colorama.Fore.BLUE, colorama.Fore.MAGENTA, colorama.Fore.CYAN])
     print(f"{random_color}{char}", end=f"{colorama.Fore.RESET}")
 print()
 
+sleep(1)
 
 random_color = random.choice([colorama.Fore.RED, colorama.Fore.GREEN, colorama.Fore.YELLOW, colorama.Fore.BLUE, colorama.Fore.MAGENTA, colorama.Fore.CYAN])
 print(f"Welcome to {random_color}", end="")
@@ -189,26 +220,28 @@ for letter in HackInjector:
     print(f"{random_color}{letter}", end="")
 print(colorama.Fore.RESET + "!")
 
-colorama.deinit()
+sleep(2)
 
 while True:
     options = input(
     """
-    Those are your options:
-        1) Get IP
-        2) Play Sound
-        3) Send Notification
-        4) Hack Phone
-        5) Hack PC
-        6) Hack Webcam
-        7) Edit Page
-        8) See Screen
-        9) Move Mouse
-        10) Give Error
-        11) Send a Prompt
-        12) Data
-        12) Exit
-    What do you choose?: """
+Those are your options:
+1) Get IP
+2) Play Sound
+3) Send Notification
+4) Hack Phone
+5) Hack PC
+6) Hack Webcam
+7) Edit Page
+8) See Screen
+9) Move Mouse
+10) Give Error
+11) Send a Prompt
+12) Disconnect Accessory
+13) Is it safe?
+14) Data
+15) Exit
+What do you choose? Note: used like 1), 2) etc.: """
     )
     if options != None:
         if options.startswith('1)'):
@@ -234,7 +267,7 @@ while True:
             editPage(link, before, after)
         elif options.startswith("8)"):
             seeScreen()
-        elif options.startswith("9)"):
+        elif options.startswith("9"):
             x1 = input("What should be the first x (Position)?: ")
             y1 = input("What should be the first y (Position)?: ")
             x2 = input("What should be the second x (Position)?: ")
@@ -245,9 +278,23 @@ while True:
         elif options.startswith("11)"):
             sendPrompt()
         elif options.startswith("12)"):
-            print(f"{__name__} {__state__} v{__version__}")
+            user = input('Username: ')
+            accessory = input('Accessory: ')
+            disconnect(user, accessory)
         elif options.startswith("13)"):
+            isItSafe()
+        elif options.startswith("14)"):
+            print(f"{__name__} {__state__} v{__version__}")
+        elif options.startswith("15)"):
             exit()
     else:
         pyautogui.alert('Expected valid choice, got unknown')
         exit()
+
+# Is it safe?
+# Yes, it completely is.
+# copyright ©️ voxj. 2023
+# Copyright ©️ Happy Enderman 2023
+
+# made with ❤️ by Chex (voxj., Happy Enderman)
+# Copyright ©️ Chex 2023
