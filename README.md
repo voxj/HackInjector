@@ -24,4 +24,4 @@ Please note that HackInjector is purely a joke program and should not be used fo
 
 ## Credits
 
-HackInjector is made by [voxj.](https://github.com/voxj) and [Happy Enderman](https://github.com/HappyEnderman). Copyrighted as [Chex](https://github.com/ChexCo).
+HackInjector is made by [voxj.](https://github.com/voxj) and [Happy Enderman](https://github.com/happyendermangit). Copyrighted as [Chex](https://github.com/ChexCo).
