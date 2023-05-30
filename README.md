@@ -22,10 +22,6 @@ HackInjector is a Python application that provides various fun and simulated hac
 
 Please note that HackInjector is purely a joke program and should not be used for any malicious purposes. Use it responsibly and respect others' privacy.
 
-## License
-
-HackInjector is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
 ## Credits
 
 HackInjector is made by [voxj.](https://github.com/voxj) and [Happy Enderman](https://github.com/HappyEnderman). Copyrighted as [Chex](https://github.com/ChexCo).
