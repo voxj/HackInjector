@@ -1,6 +1,6 @@
 # HackInjector
 
-HackInjector is a Python application that provides various fun and simulated hacking functionalities. It is a joke program intended for entertainment purposes only and does not perform any actual hacking or harm to devices.
+HackInjector is a Python application that provides various fun and simulated hacking functionalities.
 
 ## Features
 
@@ -20,7 +20,7 @@ HackInjector is a Python application that provides various fun and simulated hac
 14. **Data**: Display information about HackInjector, such as name, version, and state.
 15. **Exit**: Quit the HackInjector application.
 
-Please note that HackInjector is purely a joke program and should not be used for any malicious purposes. Use it responsibly and respect others' privacy.
+Please note that HackInjector is purely a joke program and isn't malware.
 
 ## Credits
 
