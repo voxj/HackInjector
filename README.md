@@ -2,7 +2,7 @@
 
 # HackInjector
 
-HackInjector is a Python application that provides various fun and simulated hacking functionalities. Codename Green Apple btw!
+HackInjector is a Python application that provides various fun and simulated hacking functionalities. Codename Green Planet btw!
 
 ## Features
 
