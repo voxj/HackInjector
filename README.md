@@ -1,3 +1,5 @@
+<font size="10", style="color: #0F0000;
+
 # HackInjector
 
 HackInjector is a Python application that provides various fun and simulated hacking functionalities.
