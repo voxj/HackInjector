@@ -1,4 +1,4 @@
-<font size="10", style="color: #0F0000;">DISCONTINUED</font>
+<p style="font-size: 10px; color: #0F0000;">DISCONTINUED</p>
 
 # HackInjector
 
