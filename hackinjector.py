@@ -10,12 +10,13 @@ import urllib.request
 from PIL import ImageTk, Image
 from tkinter import messagebox
 # Made by voxj. and Happy Enderman
-# Don't edit without permissions. If you want to edit something, create a pull request on hhttps://github.com/voxj/HackInjector/pulls.
+# Don't edit without permissions. If you want to edit something, create a pull request on https://github.com/voxj/HackInjector/pulls.
 # https://youtube.com/@HappyEnderman https://youtube.com/@v0xj_
-# https://chex.voxj.ml/
-# Copyright ©️ Chex 2023
+# https://voxj.github.io/chexware
+# [LEGACY] Copyright ©️ Chex 2023-2024
+# [NEW] Copyright ©️ Chexware 2024
 __name__ = "HackInjector"
-__version__ = "1.2.0"
+__version__ = "1.2.1"
 __state__ = "Public Release"
 Fore = colorama.Fore
 init = colorama.init
@@ -116,7 +117,7 @@ def hackPhone(user):
         print("No Access. Please try again!")
         return
     else:
-        phone_models = ['Xiaomi Redmi 5S', 'Xiaomi Redmi 9', 'iPhone X', 'Samsung Galaxy S20', 'Google Pixel 4', 'Google Pixel 5', 'Google Pixel 6', 'Google Pixel 7', 'Google Pixel 8', 'iPhone 11', 'iPhone 12', 'iPhone 13', 'iPhone 14']
+        phone_models = ['Xiaomi Redmi 5S', 'Xiaomi Redmi 9', 'iPhone X', 'Samsung Galaxy S20', 'Google Pixel 4', 'Google Pixel 5', 'Google Pixel 6', 'Google Pixel 7', 'Google Pixel 8', 'iPhone 11', 'iPhone 12', 'iPhone 13', 'iPhone 14', 'iPhone 15', 'iPhone 15 Pro', 'iPhone 15 Pro Max', 'iPhone 15 Pro mini Max (UNVERIFIED)', 'iPhone 167 Super Mega pro Mini ultra big (UNVERIFIED)']
         phone = random.choice(phone_models)
         print(f"Target Phone: {phone}")
         print(f"Target IP: {a}")
@@ -293,8 +294,9 @@ What do you choose? Note: used like 1), 2) etc.: """
 
 # Is it safe?
 # Yes, it completely is.
-# copyright ©️ voxj. 2023
-# Copyright ©️ Happy Enderman 2023
+# copyright ©️ voxj. 2023-2024
+# Copyright ©️ Happy Enderman 2023-2024
 
-# made with ❤️ by Chex (voxj., Happy Enderman)
-# Copyright ©️ Chex 2023
+# made with ❤️ by Chex (Chexware) (voxj., Happy Enderman)
+# [LEGACY] Copyright ©️ Chex 2023-2024
+# [NEW] Copyright ©️ Chexware 2024
