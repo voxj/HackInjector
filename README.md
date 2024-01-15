@@ -1,4 +1,5 @@
-# __**D I S C O N T I N U E D**__
+# IMPORTANT MESSAGE
+## I'm currently recoding it into C++ just because I am bored! 😆
 
 # HackInjector
 
