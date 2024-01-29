@@ -24,4 +24,4 @@ Please note that HackInjector is purely a joke program and isn't malware.
 
 ## Credits
 
-HackInjector is made by [voxj.](https://github.com/voxj) and [Happy Enderman](https://github.com/happyendermangit). Copyrighted as [Chex](https://github.com/ChexCo).
+HackInjector is made by [voxj.](https://github.com/voxj) and [Happy Enderman](https://github.com/happyendermangit). Copyrighted as [Chexware](https://github.com/ChexCo).
