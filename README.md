@@ -1,7 +1,3 @@
-# IMPORTANT MESSAGE
-## I'm currently recoding it into C++ just because I am bored! 😆
-Please note that it's gonna have less functions due to my shtoopidness in C++ (i haven't learnt it fully yet).
-
 # HackInjector
 
 HackInjector is a Python application that provides various fun and simulated hacking functionalities. Codename Green Planet btw!
